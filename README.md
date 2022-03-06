@@ -1,33 +1,17 @@
-# Demo - Projects Overview
+# A `fasttext` emebedding based classfier
 
-Overview of all the (public) projects implemented by Radix, presented as a demo.
+This work correponds to the intership work. The result is a streamlit app that reccomends a most related projects implemetented by Radix.Ai, given the description. 
 
+## Web-scraping
+A specific corpus is created by web-scrapping StackOverflow website based on keywords related to the project work in Radix.Ai.
 
+## Embedding and classification
+Infromation related to projects is represent in an ebedding space. Based on cosine similarity of a query vector a list of the most related projects is returned. 
 
-## Setup Project
-
-In order to install the project environment locally, run `./tasks/init.sh` from Terminal in the project's root folder. 
-When successful, you can activate the project's environment by running `source activate yield-validation-env`.
-
-A list of project-tasks exist, which can be summon using the `invoke` command:
-- `invoke bump` Bump the major, minor, patch, or post-release part of this package's version.
-- `invoke docs` Generate this package's docs.
-- `invoke lab` Run Jupyter Lab.
-- `invoke lint` Lint this package. 
-- `invoke test` `Test this package.
-- `invoke conda.create` Recreate the conda environment.
-- `invoke conda.update` Update the conda environment.
-- `invoke --list` Get overview of all the `invoke` commands.
-
-It is possible to extend the `invoke` list by adding your own task in the `./tasks/tasks.py` file.
+## App 
+The app is implemented with `Streamlit` and was deployed on a aws EC2 instance. 
 
 
 
-## Installation
 
-To install this package in your environment, run:
-
-```bash
-pip install git+ssh://git@gitlab.com/radix-ai/internal/demo-projects-overview.git@v0.0.0
-```
 
